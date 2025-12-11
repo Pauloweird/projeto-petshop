@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --cor-principal: #D98841;
+    --cor-titulo:#3498BF;
+    --cor-fonte: #8ABF3B;
+    --cor-normal: black;
+
+    --font-titulo: "BBH Hegarty", sans-serif;
+    --font-link: "Bebas Neue", sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor-titulo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    text-align: center ;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+}
+
+#topo img {
+    width: 150px;
+    height: aut;
+}
+
+
+#links ul li{
+    display: inline-block;
+    padding: 10px;
+    font-family: var(--font-link);
+    font-weight: normal;
+    font-size: 20px;
+}
+
+#links ul li a {
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.4s ease;
+}
+
+#links ul li a:hover {
+    background-color: var(--cor-fonte);
+    padding: 8px;
+    border-radius: 10px;
+    transition: 0.5;
+}
