@@ -6,14 +6,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
 :root {
     --cor-principal: #D98841;
     --cor-titulo:#3498BF;
     --cor-fonte: #8ABF3B;
     --cor-normal: black;
+    --cor-branco: white;
 
     --font-titulo: "BBH Hegarty", sans-serif;
     --font-link: "Bebas Neue", sans-serif;
+    --font-titulo2: "Archivo Black", sans-serif;
 }
 
 * {
@@ -25,8 +29,10 @@
 header {
     background-color: var(--cor-titulo);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 header h1 {
@@ -39,24 +45,23 @@ header h1 {
 }
 
 #topo img {
-    width: 150px;
-    height: aut;
+    width: 120px;
+    height: auto;
 }
-
 
 #links ul li{
     display: inline-block;
     padding: 10px;
-    font-family: var(--font-link);
+    font-family: var(--font-titulo2);
     font-weight: normal;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 #links ul li a {
     color: white;
     text-decoration: none;
     border-radius: 10px;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
 }
 
 #links ul li a:hover {
@@ -64,4 +69,188 @@ header h1 {
     padding: 8px;
     border-radius: 10px;
     transition: 0.5;
+}
+
+section .produtos-content {
+    background: url(https://i.pinimg.com/736x/9b/d9/54/9bd95408806898f6e7db5e6d20059e36.jpg) no-repeat bottom center;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+section .produtos-content h2{
+    color: white;
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+}
+
+.produtos-content p {
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    color: white;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 80px;
+}
+
+
+.produtos-content a.btn {
+    font-family: var(--font-titulo);
+    text-align: center;
+    color: var(--cor-fonte);
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    width: 200px;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+}
+
+.produtos-content a.btn:hover {
+    background-color: var(--cor-fonte);
+    color: white;
+    transition: 0.3s ease;
+    transform: translateY(.5)
+}
+
+/*            CATEGORIAS / CARDS             */
+
+.categorias {
+    padding: 40px 20px;
+    background-image: linear-gradient(to bottom, var(--cor-fonte) 60%, transparent);
+}
+
+.categorias h2 {
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    color: var(--cor-branco);
+    padding-bottom: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--cor-branco);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: var(--cor-branco);
+    font-family: var(--font-titulo2);
+    font-weight: normal;
+}
+
+.btn-card {
+    color: white;
+    font-family: var(--font-titulo);
+    display: inline-block;
+    background-color: var(--cor-fonte);
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+div #racao {
+    background: url(https://i.pinimg.com/1200x/24/7c/fb/247cfbbff5e0e1e2ec3996bc0d1240e3.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+div #acessorio {
+    background: url(https://i.pinimg.com/1200x/77/02/da/7702da7c2fecf5267407d4091adb79d3.jpg) no-repeat;
+    background-size: cover;
+}
+
+div #higiene {
+    background: url(https://i.pinimg.com/736x/f8/f9/ed/f8f9ed4e595106b008122f4ff4b20129.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+
+/*    Produtos   */
+
+.itens {
+   padding: 40px 22px;
+   text-align: center; 
+}
+
+.itens h2 {
+    font-family: var(--font-titulo2);
+    color: var(--cor-fonte);
+    font-size: 2em;
+    padding-bottom: 20px;
+}
+
+div.produto-grid {
+    background: url(https://i.pinimg.com/736x/28/3c/89/283c89dbbdf971adb2f573f720c90f85.jpg) center center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
+}
+
+div.produto-grid img {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 400px;
+}
+
+div.item h3 {
+    font-family: var(--font-titulo); 
+    font-weight: normal;
+    background-color: var(--cor-titulo);
+    font-size: 2em;
+    color: var(--cor-branco);
+    border-radius: 10px;
+}
+
+div.item p {
+    color: white;
+    font-family: var(--font-titulo2);
+    font-size: 20px;
+    background-color: var(--cor-fonte);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    max-width: 140px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+div.item button {
+    color: white;
+    font-family: var(--font-titulo2);
+    background-color: var(--cor-fonte);
+    border: none;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+div.item button:hover {
+    background-color: var(--cor-titulo);
+    transition: .3s ease;
 }
