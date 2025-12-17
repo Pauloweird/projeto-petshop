@@ -124,19 +124,19 @@ section .produtos-content h2{
 
 .categorias {
     padding: 40px 20px;
-    background-image: linear-gradient(to bottom, var(--cor-fonte) 60%, transparent);
 }
 
 .categorias h2 {
+    text-align: center;
     font-family: var(--font-titulo);
     font-weight: normal;
-    color: var(--cor-branco);
+    color: var(--cor-fonte);
     padding-bottom: 10px;
 }
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
 }
 
@@ -187,20 +187,35 @@ div #higiene {
     background-size: cover;
 }
 
+div #brinquedo {
+    background: url(https://i.pinimg.com/1200x/18/4c/4e/184c4e51f1fe935d68aed9e618aeb501.jpg) no-repeat;
+    background-size: cover;
+}
+
+/*     IMAGEM DE FUNDO       */
+
+#imagem-fundo div img{
+    display: none;
+}
+
 
 
 /*    Produtos   */
 
 .itens {
-   padding: 40px 22px;
-   text-align: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
-.itens h2 {
+.titulo h2{
+    text-align: center;
     font-family: var(--font-titulo2);
     color: var(--cor-fonte);
     font-size: 2em;
-    padding-bottom: 20px;
+    margin-top: 10px;
 }
 
 div.produto-grid {
@@ -209,15 +224,19 @@ div.produto-grid {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
+    margin-top: 20px;
 }
 
 div.produto-grid img {
-    padding-top: 50px;
+    padding-top: 100px;
     width: 100%;
     max-width: 400px;
 }
 
+
+
 div.item h3 {
+    text-align: center;
     font-family: var(--font-titulo); 
     font-weight: normal;
     background-color: var(--cor-titulo);
