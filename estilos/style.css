@@ -26,6 +26,7 @@
     box-sizing: border-box;
 }
 
+
 header {
     background-color: var(--cor-titulo);
     display: flex;
@@ -72,7 +73,7 @@ header h1 {
 }
 
 section .produtos-content {
-    background: url(https://i.pinimg.com/736x/9b/d9/54/9bd95408806898f6e7db5e6d20059e36.jpg) no-repeat bottom center;
+    background-image: linear-gradient(145deg, var(--cor-fonte), var(--cor-titulo));
     background-size: cover;
     padding-bottom: 20px;
 }
@@ -123,10 +124,11 @@ section .produtos-content h2{
 /*            CATEGORIAS / CARDS             */
 
 .categorias {
-    padding: 40px 20px;
+    padding: 20px 20px;
 }
 
 .categorias h2 {
+    font-size: 2em;
     text-align: center;
     font-family: var(--font-titulo);
     font-weight: normal;
@@ -144,7 +146,7 @@ section .produtos-content h2{
     background-color: var(--cor-branco);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.233);
     margin-top: 20px;
 }
 
@@ -223,7 +225,7 @@ div.produto-grid {
     background-size: cover;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.438);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.438);
     margin-top: 20px;
 }
 
@@ -272,4 +274,43 @@ div.item button {
 div.item button:hover {
     background-color: var(--cor-titulo);
     transition: .3s ease;
+}
+
+footer {
+    background-image: linear-gradient(145deg, var(--cor-fonte), var(--cor-titulo));
+    text-align: center;
+}
+
+footer h1 {
+    font-family: var(--font-titulo);
+    font-weight: normal;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+    font-family: var(--font-titulo2);
+    font-size: .8em;
+    color: white;
+    padding: 10px;
+}
+
+
+footer button {
+    border: 0px 1px 1px rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
+    font-family: var(--font-titulo2);
+    font-size: .7em;
+    background-color: var(--cor-fonte);
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+footer button:hover {
+    background-color: #3498BF;
+    transition: .3s;
 }
