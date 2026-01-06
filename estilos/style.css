@@ -261,6 +261,11 @@ div.item p {
     margin-top: 10px;
 }
 
+div.item p:hover {
+    background-color: #3498BF;
+    transition: .3s ease;
+}
+
 div.item button {
     color: white;
     font-family: var(--font-titulo2);
