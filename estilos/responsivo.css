@@ -23,6 +23,20 @@
     }
 }
 
+div.serviço {
+    grid-template-columns: repeat(2, 2fr);
+}
+
+div#adestramento {
+    height: 220px;
+}
+
+div#extra {
+    height: 220px;
+}
+
+
+
 @media screen and (min-width: 1024px) {
 
     header {

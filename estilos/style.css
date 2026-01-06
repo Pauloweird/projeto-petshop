@@ -31,18 +31,17 @@ header {
     background-color: var(--cor-titulo);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 20px;
+    gap: 20px;
 }
 
 header h1 {
     font-family: var(--font-titulo);
     font-weight: normal;
-    text-align: center ;
-    padding: 10px;
-    font-size: 40px;
+    font-size: 2.2em;
     color: white;
+    text-align: center;
 }
 
 #topo img {
@@ -50,26 +49,30 @@ header h1 {
     height: auto;
 }
 
+/*          NAV                         */
+
+#links ul {
+    list-style: none;
+}
+
 #links ul li{
     display: inline-block;
     padding: 10px;
     font-family: var(--font-titulo2);
     font-weight: normal;
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
 #links ul li a {
     color: white;
     text-decoration: none;
+    padding: 8px 12px;
     border-radius: 10px;
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 #links ul li a:hover {
     background-color: var(--cor-fonte);
-    padding: 8px;
-    border-radius: 10px;
-    transition: 0.5;
 }
 
 section .produtos-content {
@@ -92,9 +95,6 @@ section .produtos-content h2{
     font-weight: normal;
     color: white;
     font-size: 0.7em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 10px;
     height: 80px;
 }
@@ -236,7 +236,6 @@ div.produto-grid img {
 }
 
 
-
 div.item h3 {
     text-align: center;
     font-family: var(--font-titulo); 
@@ -279,6 +278,61 @@ div.item button {
 div.item button:hover {
     background-color: var(--cor-titulo);
     transition: .3s ease;
+}
+
+/*---------SERVIÇOS-----------------*/
+
+div#banho {
+     background: url(https://i.pinimg.com/1200x/40/ef/c5/40efc51bb4ad2e6ccd8ee1372fc23ef5.jpg)center center;
+    background-size: cover;
+}
+
+div#cuidados {
+    background: url(https://i.pinimg.com/736x/80/7d/ee/807deea60b1abe5dee20736c22393f65.jpg) center center;
+    background-size: cover;
+}
+
+div#adestramento {
+    background: url(https://i.pinimg.com/1200x/ba/a1/89/baa18967c0a3313ace5e4b3d1354f899.jpg) center center;
+    background-size: cover;
+}
+
+div#extra {
+    background: url(https://i.pinimg.com/736x/7b/81/6f/7b816f5009606d4d680fab13f8f6d4c1.jpg) center left;
+    background-size: cover;
+}
+
+div.serviço {
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.438);
+    margin: 20px 10px 20px 10px;
+}
+
+div.serviço h3 {
+    color: white;
+    font-family: var(--font-titulo2);
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+div.serviço ul {
+    padding: 10px;
+    color: white;
+}
+
+div.serviço ul li a {
+    font-family: var(--font-link);
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+div.serviço ul li a:hover {
+    background-color: #8ABF3B;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: underline;
 }
 
 footer {
