@@ -21,6 +21,10 @@
     div.produto-grid {
        grid-template-columns: repeat(2, 1fr);
     }
+
+    div.produtos-content p {
+        text-align: center;
+    }
 }
 
 div.serviço {

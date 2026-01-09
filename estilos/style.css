@@ -87,9 +87,8 @@ section .produtos-content h2{
     font-weight: normal;
     font-size: 1.2em;
     padding: 10px;
-    text-align: center;
 }
-
+  
 .produtos-content p {
     font-family: var(--font-titulo);
     font-weight: normal;
