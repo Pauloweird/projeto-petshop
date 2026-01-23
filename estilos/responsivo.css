@@ -72,12 +72,14 @@ div#extra {
 
     div.produto-grid {
         grid-template-columns: repeat(3, 1fr);
-        max-width: 1100px;
+        max-width: 400px;
         margin: auto;
+        height: 660px;
+        transition: transform .3s ease, box-shadow .3s ease;
     }
-
-    div.produto-grid {
-        height: 850px;
+    div.produto-grid:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 16px rgba(0, 153, 255, 0.445);
     }
 
     #foto img {

@@ -128,7 +128,7 @@ header h1 a {
 
 .card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 15px rgba(0, 153, 255, 0.445);
 }
 
 .card img {
@@ -182,6 +182,7 @@ div#brinquedo {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     padding: 20px;
+    justify-content: center;
     text-align: center;
 }
 
@@ -279,7 +280,7 @@ div.servico {
 
 div.servico:hover {
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 153, 255, 0.445);
 }
 
 div.servico h3 {
