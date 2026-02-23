@@ -19,7 +19,7 @@
     }
 
     #links ul li a {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     div.banho {
@@ -86,14 +86,5 @@
 
     #foto img {
         padding-bottom: 0px;
-    }
-
-    footer {
-        text-align: left;
-        padding: 30px;
-    }
-
-    footer p {
-        text-align: left;
     }
 }
