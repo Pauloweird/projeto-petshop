@@ -8,6 +8,7 @@
         padding: 40px 40px;
     }
 
+
     header h1 {
         font-size: 41px;
     }
@@ -17,39 +18,40 @@
         width: auto;
     }
 
-
-    div.produto-grid {
-       grid-template-columns: repeat(2, 1fr);
+    #links ul li a {
+        font-size: 1.5em;
     }
 
-}
+    div.banho {
+    height: 200px;
+    }
 
-div.serviço {
+    div.serviço {
     grid-template-columns: repeat(2, 2fr);
-}
+    }
 
-div#cuidados {
+    div#cuidados {
     height: 220px;
-}
+    }
 
-div#adestramento {
+    div#adestramento {
     height: 220px;
-}
+    }
 
-div#extra {
+    div#extra {
     height: 220px;
-}
+    }
 
+    }
 
-
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     header {
-        padding: 50px;
+        padding-top: 40px;
     }
 
     #links ul li {
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
     div.titulo h2 {
@@ -58,7 +60,8 @@ div#extra {
     }
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
     .categorias h2 {
@@ -74,7 +77,6 @@ div#extra {
         grid-template-columns: repeat(3, 1fr);
         max-width: 400px;
         margin: auto;
-        height: 660px;
         transition: transform .3s ease, box-shadow .3s ease;
     }
     div.produto-grid:hover {

@@ -30,8 +30,6 @@ header {
     background-color: var(--cor-titulo);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
     gap: 20px;
 }
 
@@ -65,10 +63,13 @@ header h1 a {
 
 #links ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0;
 }
 
 #links ul li{
-    display: inline-block;
     padding: 10px;
     font-family: var(--font-titulo2);
     font-weight: normal;
@@ -76,15 +77,17 @@ header h1 a {
 }
 
 #links ul li a {
+    display: inline-block;
     color: white;
     text-decoration: none;
     padding: 8px 12px;
-    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
 #links ul li a:hover {
     background-color: var(--cor-fonte);
+    border-radius: 10px;
+
 }
 
 
@@ -113,8 +116,9 @@ header h1 a {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 20px;
+    margin: 5px;
 }
 
 .card {
@@ -206,7 +210,7 @@ div.produto-grid img {
 
 div.item h3 {
     text-align: center;
-    font-family: var(--font-titulo); 
+    font-family: var(--font-titulo2); 
     font-weight: normal;
     background-color: var(--cor-titulo);
     font-size: 2em;
