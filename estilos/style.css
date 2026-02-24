@@ -116,14 +116,14 @@ header h1 a {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+    gap: 10px;
     margin: 5px;
 }
 
 .card {
     background-color: var(--cor-branco);
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.233);
     margin-top: 20px;
@@ -276,9 +276,9 @@ div#extra {
 
 div.servico {
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 3px 10px rgba(255, 255, 255, 0.438);
-    margin: 20px 10px 20px 10px;
+    margin: 10px;
     transition: transform .3s ease, box-shadow .3s ease;
 }
 
@@ -295,7 +295,7 @@ div.servico h3 {
 }
 
 div.servico ul {
-    padding: 10px;
+    padding: 7px;
     color: white;
 }
 
